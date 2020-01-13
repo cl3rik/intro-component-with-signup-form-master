@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+<body>
+<div class="container h-100">
+
+  <div class="row h-100 align-content-center align-items-center">
+
+    <div class="row mx-0 main-section shadow-lg">
+
+      <div class="left-section col-lg-6 d-flex flex-wrap align-content-center">
+        <h1 class="pb-3">Learn to code by watching others</h1>
+
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable.</p>
+      </div>
+      
+      <div class="right-section pl-3 col-lg-6 d-flex flex-wrap align-content-center">
+
+        <button class="btn-custom-trial btn-block btn-lg p-3"><span>Try it free 7 days</span> then $20/mo. thereafter</button> 
+      
+        <div class="card w-100 py-3 px-5 mt-4 rounded-custom">
+          <form class="needs-validation" novalidate>
+            <div class="form-group">
+              <label class="text-hide" for="formGroupExampleInput1">First Name</label>
+              <input type="text" class="form-control p-4" id="firstName" placeholder="First Name" required>
+              <div id="firstName-msg" class="message-error font-italic text-right mt-2"></div>
+              
+              
+              <label class="text-hide" for="formGroupExampleInput2">Last Name</label>
+              <input type="text" class="form-control p-4" id="lastName" placeholder="Last Name" required>
+              <div id="lastName-msg" class="message-error font-italic text-right mt-2"></div>
+              
+              <label class="text-hide" for="formGroupExampleInput3">Email Address</label>
+              <input type="email" class="form-control p-4" id="email" placeholder="Email Address" required>
+              <div id="email-msg" class="message-error font-italic text-right mt-2"></div>
+              
+              <label class="text-hide" for="formGroupExampleInput4">Password</label>
+              <input type="password" class="form-control p-4" id="password" placeholder="Password" required>   
+              <div id="password-msg" class="message-error font-italic text-right mt-2"></div>
+            </div>                                   
+            <!-- <button type="submit">OK</button> -->
+            <button type="submit" class="btn-custom-claim btn-block btn-lg p-3 mb-4 mt-2 text-uppercase">Claim your free trial</button>
+            <p class="legals">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+        </form>   
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
